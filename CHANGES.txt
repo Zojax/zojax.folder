@@ -1,0 +1,138 @@
+=======
+CHANGES
+=======
+
+1.1.5 (2009-08-12)
+------------------
+
+- Added url mapper support (zojax.content.urlmapper)
+
+
+1.1.4 (2009-05-23)
+------------------
+
+- Replace 'globalepermission' directive with 'zojax:permission'
+
+- Copyright changed to 'Zope Foundation and Contributors'
+
+
+1.1.3 (2009-05-07)
+------------------
+
+- Added activity system support
+
+- Do not use z3c.autoinclude
+
+
+1.1.2 (2009-04-02)
+------------------
+
+- Do not use drafts
+
+
+1.1.1 (2009-03-28)
+------------------
+
+- Update tests
+
+
+1.1.0 (2009-03-14)
+------------------
+
+- Removed workflow support
+
+- Added draft system support
+
+- Added contents sorting support
+
+- Added tags support
+
+
+1.0.10 (2008-12-31)
+-------------------
+
+- Mark folder as IAttachmentsAware
+
+- Update folder workflow
+
+
+1.0.8 (2008-11-13)
+------------------
+
+- Use zojax.content.type instead of zojax.content
+
+
+1.0.7 (2008-10-31)
+------------------
+
+- Use IOwnerAware explicitly
+
+- Use IAnnotatableOrder for folder
+
+
+1.0.6 (2008-10-17)
+------------------
+
+- Added translations: ru, nl
+
+
+1.0.5 (2008-10-08)
+------------------
+
+- Mark folders as searchable content
+
+
+1.0.3 (2008-09-19)
+------------------
+
+- Use ContentContainer as base class for folder
+
+
+1.0.2 (2008-09-02)
+------------------
+
+- Fixed mark folder as Active Portal Type
+
+
+1.0.1 (2008-08-28)
+------------------
+
+- Mark Folder content type as Portal Type
+
+
+1.0.0 (2008-07-23)
+------------------
+
+- Added tests
+
+
+0.11.0 (2008-06-26)
+-------------------
+
+- Use new content api
+
+
+0.10.3 (2008-04-03)
+-------------------
+
+- Make zojax.workflow optional
+
+
+0.10.2 (2008-02-12)
+-------------------
+
+- Code cleanup
+
+
+0.10.1 (2008-02-01)
+------------------
+
+- Removed 'grant' directives
+
+- Use zojax.content 0.10
+
+
+0.10 (2008-02-01)
+------------------
+
+- Initial release.

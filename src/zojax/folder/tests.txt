@@ -1,0 +1,62 @@
+======
+Folder
+======
+
+    >>> from zope import component, interface, event
+    >>> from zope.testbrowser.testing import Browser
+    >>> from zope.app.testing.functional import getRootFolder
+    >>> from zope.app.component.hooks import setSite
+    >>> from zope.lifecycleevent import ObjectCreatedEvent
+    >>> from zope.app.security.interfaces import IAuthentication
+    >>> from zope.app.intid import IntIds
+    >>> from zope.app.intid.interfaces import IIntIds
+    >>> from zojax.folder.folder import Folder
+    >>> from zojax.catalog.catalog import ICatalog, Catalog
+
+    >>> root = getRootFolder()
+    >>> setSite(root)
+    >>> sm = root.getSiteManager()
+
+    >>> root['ids'] = IntIds()
+    >>> sm.registerUtility(root['ids'], IIntIds)
+    >>> _t = root['ids'].register(root)
+
+    >>> root['catalog'] = Catalog()
+    >>> sm.registerUtility(root['catalog'], ICatalog)
+
+    >>> actor = Browser()
+    >>> actor.handleErrors = False
+    >>> actor.addHeader("Authorization", "Basic mgr:mgrpw")
+
+Add as standard content
+
+    >>> actor.open("http://localhost/+/")
+    >>> actor.getControl(name='type_name').value = ['BrowserAdd__zojax.folder.folder.Folder']
+    >>> actor.getControl(name='add').click()
+
+Add content
+
+    >>> actor.open("http://localhost/Folder/context.html/contents/")
+    >>> actor.getLink('Folder').click()
+
+    >>> actor.getControl('Title').value = 'Test folder'
+    >>> actor.getControl('Add').click()
+    >>> print actor.contents
+    <!DOCTYPE html PUBLIC
+    ...
+    ...<h1 class="z-content-title">Test folder</h1>...
+    ...
+    </html>
+
+Listing
+
+    >>> actor.open("http://localhost/Folder/listing.html")
+    >>> print actor.contents
+    <!DOCTYPE html PUBLIC
+    ...
+    <td>Test folder</td>
+    ...
+    </html>
+  
+    >>> setSite(None)
+
