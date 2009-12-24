@@ -1,0 +1,52 @@
+# #############################################################################
+#
+# Copyright (c) 2009 Zope Foundation and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+# #############################################################################
+msgid ""
+msgstr ""
+"Project-Id-Version: Development/Unknown\n"
+"POT-Creation-Date: Fri Oct 17 17:16:04 2008\n"
+"PO-Revision-Date: 2008-10-14 17:25+0100\n"
+"Last-Translator: F. Kooman <fkooman@tuxed.net>\n"
+"Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: zope/app/locales/extract.py\n"
+
+#: src/zojax/folder/configure.zcml:10 src/zojax/folder/configure.zcml:26
+msgid "Folder"
+msgstr "Map"
+
+#: src/zojax/folder/configure.zcml:10 src/zojax/folder/configure.zcml:56
+msgid "A folder which can contain other items."
+msgstr "Een map die andere items bevatten."
+
+#: src/zojax/folder/configure.zcml:26 src/zojax/folder/configure.zcml:56
+msgid "Folder (zojax)"
+msgstr "Map"
+
+#: src/zojax/folder/workflow.py:24 src/zojax/folder/workflow.py:34
+msgid "Visible"
+msgstr "Zichtbaar"
+
+#: src/zojax/folder/workflow.py:27 src/zojax/folder/workflow.py:37
+msgid "Private"
+msgstr "Privé"
+
+#: src/zojax/folder/workflow.py:31
+msgid "Init workflow"
+msgstr ""
+
+#: src/zojax/folder/workflow.py:41
+msgid "Default Folder Workflow"
+msgstr ""
