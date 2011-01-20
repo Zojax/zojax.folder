@@ -25,6 +25,7 @@
     <implements interface="zojax.content.type.interfaces.IShareableContent" />
     <implements interface="zojax.content.type.interfaces.IContentContainer" />
     <implements interface="zojax.content.type.interfaces.IContainerContentsAware" />
+    <implements interface="zojax.content.type.interfaces.ITitleBasedName" />
   </class>
 
   <class class=".folder.Folder">
